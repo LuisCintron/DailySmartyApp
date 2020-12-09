@@ -10,8 +10,8 @@ class SearchBar extends Component {
     this.props.history.push('/results');
   }
 
-  renderInput(field) {
-    return <input type='text' placeholder='Search DailySmarty' {...field.input} />
+  renderInput(Field) {
+    return <input type='text' placeholder='Search DailySmarty' {...Field.input} />
   }
   render() {
 
