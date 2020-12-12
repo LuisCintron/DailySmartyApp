@@ -9,8 +9,8 @@ class SearchBar extends Component {
     this.props.onSubmit(query);
   }
 
-  renderInput(Field) {
-    return <input type='text' placeholder='Search DailySmarty' {...Field.input} />
+  renderInput(field) {
+    return <input type='text' placeholder='Search DailySmarty' {...field.input} />
   }
   render() {
 
@@ -18,8 +18,8 @@ class SearchBar extends Component {
 
     return (
       <form className='search-bar' onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-        <input placeholder='Search DailySmarty' />
-        <field name='query' component={this.renderinput} />
+
+        <Field name='query' component={this.renderInput} />
       </form>
     );
   }
