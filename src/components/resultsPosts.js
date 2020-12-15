@@ -1,22 +1,29 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import Posts from './posts'
 
 class ResultsPosts extends Component {
+  renderPosts() {
+    const posts = this.props.posts.map((post, index) => {
+      return <Posts key={index} {...post} />
+    })
+    return posts;
+  }
   render() {
     return (
-      <ul className='results-posts'>
-        <div className='results-post-wrapper'>
-          <div className='results-posts_posts'>
-            results go here
-            </div>
+      <div className='results-posts'>
+        <div className='results-posts_wrapper'>
+          <ul className='results-posts_posts'>
+            {this.renderPosts()}
+          </ul>
         </div>
-      </ul>
+      </div>
     )
   }
 }
 
 function mapStateToProps(state) {
-  return (state)
+  return { posts: state.posts.resultsPosts }
 }
 
 export default connect(mapStateToProps)(ResultsPosts);
