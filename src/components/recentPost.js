@@ -23,8 +23,8 @@ class RecentPosts extends Component {
   render() {
     return (
       <div className='recent-posts'>
-        <div className='recent-post-wrapper'>
-          <div className='recent-post-heading'>
+        <div className='recent-post__wrapper'>
+          <div className='recent-post__heading'>
             Recent Posts
               </div>
           <ul className='recent-posts__posts'>
