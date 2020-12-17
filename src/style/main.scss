@@ -19,6 +19,12 @@ body {
   height: 100vh;
   width: 66vw;
   align-content: space-around;
+  justify-items: stretch;
+}
+
+.logo-main,
+.recent-posts {
+  display: grid;
   justify-items: center;
 }
 
