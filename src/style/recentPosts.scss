@@ -3,12 +3,12 @@
   align-items: center;
   justify-items: center;
 
-  .recent-post__wrapper {
+  .recent-posts__wrapper {
     display: grid;
     grid-row-gap: 21px;
     width: 100%;
   }
-  .recent-post__heading {
+  .recent-posts__heading {
     color: $color-blue-main;
     font-size: 14px;
   }
