@@ -46,6 +46,11 @@ class Posts extends Component {
         </div>
       )
     })
+    if (links == 0) {
+      return <div className='no-content'>No post links</div>
+    }
+
+
     return links;
   }
 
